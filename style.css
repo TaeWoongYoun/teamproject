@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+ul li{
+    list-style: none;
+}
+
 .wrap{
     width: 1200px;
+    margin: 0 auto;
 }
 
 .head{
@@ -17,16 +22,70 @@
 .logo{
     width: 200px;
     height: 100%;
+    background-color: aqua;
 }
 
 .title{
     width: 1000px;
     height: 100%;
+    background-color: aquamarine;
 }
 
 .slide{
-    width: 100%;
+    width: 1200px;
     height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.window{
+    width: 4800px;
+    height: 300px;
+    position: absolute;
+    animation: infinite 9s window;
+    display: flex;
+}
+
+.window li{
+    width: 1200px;
+    height: 300px;
+}
+
+.slide img{
+    position: absolute;
+    top: 0;
+}
+
+@keyframes window{
+
+    0%{
+        left: 0%;
+    }
+
+    23%{
+        left: 0%;
+    }
+
+    33%{
+        left: -1200px;
+    }
+
+    56%{
+        left: -1200px;
+    }
+
+    66%{
+        left: -2400px;
+    }
+
+    90%{
+        left: -2400px;
+    }
+
+    100%{
+        left: -3600px;
+    }
+
 }
 
 .content{
@@ -38,16 +97,19 @@
 .left{
     width: 400px;
     height: 100%;
+    background-color: antiquewhite;
 }
 
 .center{
     width: 400px;
     height: 100%;
+    background-color: aliceblue;
 }
 
 .right{
     width: 400px;
     height: 100%;
+    background-color: aquamarine;
 }
 
 .footer{
@@ -56,7 +118,7 @@
     display: flex;
 }
 
-.logo2{
+.logo{
     width: 200px;
     height: 100%;
 }
@@ -64,9 +126,11 @@
 .copy{
     width: 800px;
     height: 100%;
+    background-color: black;
 }
 
 .sns{
     width: 200px;
     height: 100%;
+    background-color: antiquewhite;
 }
