@@ -1,6 +1,11 @@
 
 // 이미지 슬라이드
 $(document).ready(function(){
+
+    // $(".main").hover(function(){
+    //     $(".sub li").stop().slideDown();
+    // })
+
     var i = 4;
     setInterval(function(){
         i--;
