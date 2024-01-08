@@ -1,3 +1,13 @@
+// 드롭다운 메뉴
+$(".main").hover(function(){
+
+
+}, function(){
+
+    
+});
+
+// 이미지 슬라이드
 $(document).ready(function(){
     var i = 4;
     setInterval(function(){

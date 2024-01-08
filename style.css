@@ -8,6 +8,11 @@ ul li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .wrap{
     width: 1200px;
     margin: 0 auto;
@@ -25,10 +30,48 @@ ul li{
     background-color: aqua;
 }
 
-.title{
+.menu{
     width: 1000px;
     height: 100%;
     background-color: aquamarine;
+    position: relative;
+    z-index: 1;
+}
+
+.main{
+    padding: 20px 0 0 350px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.main li{
+    width: 150px;
+    float: left;
+    background-color: aliceblue;
+}
+
+.main li:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.main li:hover > .sub{
+    display: block;
+}
+
+.sub{
+    display: none;
+}
+
+.sub li{
+    background-color: aliceblue;
+    color: black;
+}
+
+.sub li:hover{
+    background-color: black;
+    color: aliceblue;
 }
 
 .slide{
