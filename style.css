@@ -159,7 +159,7 @@ h3{
     background-color: aliceblue;
 }
 
-button{
+center button{
     margin-top: 15px;
     margin-left: 7px;
     width: 120px;
@@ -193,4 +193,27 @@ button{
     width: 200px;
     height: 100%;
     background-color: antiquewhite;
+}
+
+.popup_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 100;
+    /* display: none; */
+}
+
+.popup{
+    width: 600px;
+    height: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.popup button{
+    margin-top: 300px;
+    margin-left: 500px;
 }

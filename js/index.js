@@ -1,11 +1,3 @@
-// 드롭다운 메뉴
-$(".main").hover(function(){
-
-
-}, function(){
-
-    
-});
 
 // 이미지 슬라이드
 $(document).ready(function(){
@@ -16,4 +8,13 @@ $(document).ready(function(){
         $(".slide img").eq(i).animate({left:"-1200px"},500);
         if(i==1)i=4;
     },2000);
+
+    $(".popup button").click(function(){
+        $(".popup_bg").css({display:"none"});
+    });
+    
+    $(".left pre").eq(0).click(function(){
+        $(".popup_bg").css({display:"block"});
+    });
+
 });
